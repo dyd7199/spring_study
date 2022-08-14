@@ -11,14 +11,14 @@ import org.springframework.context.annotation.FilterType;
 @ComponentScan(
         // 탐색할 패키지의 시작위치를 지정한다.
         // default는 @ComponentScan 위치부터 하위 패키지 전부
-        basePackages = "hello.core.member",
+//        basePackages = "hello.core.member",
         excludeFilters = @ComponentScan.Filter(type = FilterType.ANNOTATION, classes = Configuration.class)
 )
 public class AutoAppConfig {
-    @Bean(name = "memoryMemberRepository")
-    MemberRepository memberRepository(){
-        return new MemoryMemberRepository();
-    }
+//    @Bean(name = "memoryMemberRepository")
+//    MemberRepository memberRepository(){
+//        return new MemoryMemberRepository();
+//    }
 
 
 }
